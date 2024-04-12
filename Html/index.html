@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../Css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Search form -->
+    <form action="/search" method="get">
+      <input type="text" name="q" placeholder="Search..." />
+      <button type="submit">Search</button>
+    </form>
+
+    <!-- Book Display Section -->
+    <div class="book-container"></div>
+
+    <!-- Pagination Controls -->
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item">
+          <button class="page-link" aria-label="Previous" disabled>
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+          </button>
+        </li>
+        <li class="page-item"><button class="page-link">1</button></li>
+        <li class="page-item active">
+          <button class="page-link" aria-current="page">2</button>
+        </li>
+        <li class="page-item"><button class="page-link">3</button></li>
+        <li class="page-item">
+          <button class="page-link" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+          </button>
+        </li>
+      </ul>
+      <div class="current-page">Current page: 2</div>
+      <div class="total-pages">Total pages: 5</div>
+    </nav>
+    <script src="../Js/script.js"></script>
+  </body>
+</html>

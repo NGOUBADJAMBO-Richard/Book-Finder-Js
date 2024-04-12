@@ -1,0 +1,104 @@
+/* Search form */
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+form input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+/* Book Display Section */
+.book-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 15%;
+  margin-bottom: 10px;
+}
+
+.book-cover {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.book-details {
+  flex: 1;
+}
+
+.book-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.book-author,
+.book-publisher,
+.book-published-date,
+.book-description {
+  margin-bottom: 10px;
+}
+
+/* Pagination Controls */
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-link {
+  display: block;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  color: #333;
+}
+
+.page-link:hover {
+  background-color: #f2f2f2;
+}
+
+.active .page-link {
+  background-color: #4caf50;
+  color: white;
+}
+
+.current-page,
+.total-pages {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
